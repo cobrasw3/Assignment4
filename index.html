@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="queries.js"> </script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{text-align: center;}
+    </style>
+    <p>
+        <h3>ID :
+          <input id="ID" type="text">
+        </h3>
+        <h3>Name:
+          <input id="name" type="text">
+        </h3>
+        <h3>email:
+            <input id="email" type="email">
+          </h3>
+          <div>
+            <button type="button" onclick = "window.location.href = '/users'">Show users</button>
+            <button type="button" onclick = "window.location.href = '/users/'+getElementById('ID').value">Show user by ID</button>
+            <button type="button" onclick = "window.location.href = '/users/create/'+getElementById('ID').value+'/'+getElementById('name').value+'/'+getElementById('email').value">Create user</button>
+            <button type="button" onclick = "window.location.href = '/users/update/'+getElementById('ID').value+'/'+getElementById('name').value+'/'+getElementById('email').value">Update user</button>
+            <button type="button" onclick = "window.location.href = '/users/delete/'+getElementById('ID').value">Delete user</button>
+          </div>
+</body>
+</html>
